@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+
+        <link href="css/normalize.css" rel="stylesheet">
+
+        <title>HTML Academy: Глейси</title>
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="container clearfix">
+                <a href="index.html" class="logo-img"><img src="img/logo.png" width="156" height="75" alt="Classy"></a>
+                <nav class="main-navigation">
+                    <ul>
+                        <li>
+                            <a href="catalog.html" class="active">Каталог</a>
+                            <ul class="sub-menu">
+                                <li><a href="#" class="novelties">Новинки</a></li>
+                                <li><a href="#">Сливочное</a></li>
+                                <li><a href="#" class="active">Щербеты</a></li>
+                                <li><a href="#">Фруктовый лед</a></li>
+                                <li><a href="#">Мелорин</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Клиенты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user-block">
+                    <!-- Поиск -->
+                    <a class="search-icon" href="#">Поиск</a>
+                    <input type="search" name="search">
+
+                    <!-- Форма входа на сайт -->
+                    <a class="login" href="#">Вход</a>
+                    <div class="login-form">
+                        <form action="https://echo.glassy.ru"  method="post" enctype="text/plain">
+                            <label>
+                                <input type="email" name="email" placeholder="Электронная почта">
+                            </label>
+                            <label>
+                                <input type="password" name="password" placeholder="Пароль">
+                            </label>
+                            <button type="submit" class="btn btn-write">Войти</button>
+                        </form>
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Новая регистрация</a>
+                    </div>
+
+                    <!-- Корзина -->
+                    <a href="#" class="shopping-cart">Корзина</a>
+                    <div class="shopping-cart-form">
+                        <table>
+                            <tr>
+                                <td><button type="button" name="delete" class="button-delete"></button></td>
+                                <td>Пломбир с апельсиновым джемом</td>
+                                <td>1,5 кг</td>
+                                <td class="price">х 200 руб.</td>
+                                <td class=>300 руб.</td>
+                            <tr>
+                            <tr>
+                                <td><button type="button" name="delete" class="button-delete"></button></td>
+                                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                                <td>1,5 кг</td>
+                                <td class="price">х 300 руб.</td>
+                                <td>450 руб.</td>
+                            <tr>
+                            <tr>
+                               <td colspan="4">Итого</td>
+                               <td>750 руб.</td>
+                            </tr>
+                        </table>
+                        <button type="button" name="order" class="button-order">Оформить заказ</button>
+                    </div>
+
+                    <p class="store-info">
+                        <span class="store-hours">С 10 до 20, ежедневно</span>
+                        <span class="store-telephone">8 812 450-25-25</span>
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+
+        </div>
+
+        <footer class="main-footer">
+            <section class="footer-links container clearfix">
+
+                <div class="footer-links-social">
+                    <a href="http://twitter.com" class="icon-twitter"></a>
+                    <a href="http://instagram.com" class="icon-instagram"></a>
+                    <a href="http://facebook.com" class="icon-facebook"></a>
+                    <a href="http://vk.com" class="icon-vk"></a>
+                 </div>
+
+                 <div class="footer-links-documents">
+                     <div class="footer-links-documents-left">
+                         <a href="#" class="providers">Для поставщиков</a>
+                         <a href="#">О производстве</a>
+                     </div>
+                     <div class="footer-links-documents-right">
+                         <a href="#">Наши документы</a>
+                         <a href="#">Экологические стандарты</a>
+                     </div>
+                 </div>
+
+                 <div class="footer-links-copyright">
+                     <a href="#"><img src="htmlacademy-logo.png"></a>
+                     <p>Сделано в <a href="#">HTML Academy</a> © 2016</p>
+                 </div>
+             </section>
+        </footer>
+
+        <div class="popup">
+            <form action="mailto:admin@glassy.ru" enctype="text/plain">
+                <p class="popup-title">Мы обязательно вам ответим!</p>
+                <button type="button" class="btn-popup-close" title="Закрыть"></button>
+                <label>
+                    <input type="text" name="username" placeholder="Как вас зовут?">
+                </label>
+                <label>
+                    <input type="email" name="email" placeholder="Ваша почта для ответа?">
+                </label>
+                <label for="letter-text">
+                    <textarea name="text" id="letter-text" rows="4" placeholder="Напишите что-нибудь.."></textarea>
+                </label>
+                <button type="submit" class="btn btn-write">Отправить</button>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
