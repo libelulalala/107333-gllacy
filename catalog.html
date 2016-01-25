@@ -104,79 +104,73 @@
             </ul>
             <h1>Сливочное мороженое</h1>
 
-
-
-
-            Сортировка:
-            <a href="catalog.html" class="active">Каталог</a>
-            <ul class="sub-menu">
-                <li><a href="#" class="novelties">Новинки</a></li>
-                <li><a href="#">Сливочное</a></li>
-                <li><a href="#" class="active">Щербеты</a></li>
-                <li><a href="#">Фруктовый лед</a></li>
-                <li><a href="#">Мелорин</a></li>
-            </ul>
-
-            <form action="#" method="post" name="filters">
-                <!-- Фильтр сортировки (выпадающее меню) -->
-                <section class="sorting-preference">
-                    <a href="#" class="filter-title">Сортировка</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">сначала недорогие</a></li>
-                        <li><a href="#">сначала дорогие</a></li>
-                        <li><a href="#">по жирности</a></li>
-                    </ul>
-                </section>
-
-                <!-- Фильтр цены (поле с ползунком)-->
-                <section class="price-filter">
-                    <h2 class="filter-title">Цена: 100 руб. – 500 руб.</h2>
-                    <div class="price-controls">
-                        <div class="scale">
-                            <div class="bar"></div>
+            <section class="preferences">
+                <form action="#" method="post" name="filters">
+                    <!-- Фильтр сортировки (выпадающее меню) -->
+                    <section class="sorting-preference">
+                        <span href="#" class="filter-title">Сортировка</span>
+                        <div class="sorting-select">
+                            <select name="sorting">
+                                <option>сначала недорогие</option>
+                                <option>сначала дорогие</option>
+                                <option>по жирности</option>
+                            </select>
                         </div>
-                        <div class="toggle toggle-min"></div>
-                        <div class="toggle toggle-max"></div>
-                    </div>
-                </section>
+                    </section>
 
-                <!-- Фильтр жирности (radio)-->
-                <section class="fat-content-filter">
-                    <h2 class="filter-title">Жирность:</h2>
-                    <input type="radio" name="fat-free" id="fat-free">
-                    <label for="fat-free">0%</label>
+                    <!-- Фильтр цены (поле с ползунком)-->
+                    <section class="price-filter">
+                        <span class="filter-title">Цена: 100 руб. – 500 руб.</span>
+                        <div class="price-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="toggle toggle-min"></div>
+                            <div class="toggle toggle-max"></div>
+                        </div>
+                    </section>
 
-                    <input type="radio" name="not-more-then-ten" id="not-more-then-ten" checked>
-                    <label for="not-more-then-ten">до 10%</label>
+                    <!-- Фильтр жирности (radio)-->
+                    <section class="fat-content-filter">
+                        <span class="filter-title">Жирность:</span>
+                        <input type="radio" name="fat-free" id="fat-free">
+                        <label for="fat-free">0%</label>
 
-                    <input type="radio" name="not-more-then-thirty" id="not-more-then-thirty">
-                    <label for="not-more-then-thirty">до 30%</label>
+                        <input type="radio" name="not-more-then-ten" id="not-more-then-ten" checked>
+                        <label for="not-more-then-ten">до 10%</label>
 
-                    <input type="radio" name="more-then-thirty" id="more-then-thirty">
-                    <label for="more-then-thirty">выше 30%</label>
-                </section>
+                        <input type="radio" name="not-more-then-thirty" id="not-more-then-thirty">
+                        <label for="not-more-then-thirty">до 30%</label>
 
-                <!-- Фильтр наполнителей (checkbox) -->
-                <section class="">
-                    <h2 class="filter-title">Наполнители</h2>
-                    <input type="checkbox" name="chocolate" id="chocolate" checked>
-                    <label for="chocolate">шоколадные</label>
+                        <input type="radio" name="more-then-thirty" id="more-then-thirty">
+                        <label for="more-then-thirty">выше 30%</label>
+                    </section>
 
-                    <input type="checkbox" name="sugar" id="sugar" checked>
-                    <label for="sugar">сахарные присыпки</label>
+                    <!-- Фильтр наполнителей (checkbox) -->
+                    <section class="">
+                        <span class="filter-title">Наполнители</span>
+                        <input type="checkbox" name="chocolate" id="chocolate" checked>
+                        <label for="chocolate">шоколадные</label>
 
-                    <input type="checkbox" name="fruits" id="fruits">
-                    <label for="fruits">фрукты</label>
+                        <input type="checkbox" name="sugar" id="sugar" checked>
+                        <label for="sugar">сахарные присыпки</label>
 
-                    <input type="checkbox" name="syrups" id="syrups">
-                    <label for="syrups">сиропы</label>
+                        <input type="checkbox" name="fruits" id="fruits">
+                        <label for="fruits">фрукты</label>
 
-                    <input type="checkbox" name="jams" id="jams">
-                    <label for="jams">джемы</label>
-                </section>
+                        <input type="checkbox" name="syrups" id="syrups">
+                        <label for="syrups">сиропы</label>
 
-                <input class="btn btn-filters" type="submit" value="Применить">
-            </form>
+                        <input type="checkbox" name="jams" id="jams">
+                        <label for="jams">джемы</label>
+                    </section>
+
+                    <input class="btn btn-filters" type="submit" value="Применить">
+                </form>
+            </section>
+
+
+
 
             <section class="catalog-list">
                 <div class="catalog-item">
