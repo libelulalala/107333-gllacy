@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box; }
+*:before {
+    box-sizing: border-box; }
+*:after {
+    box-sizing: border-box; }
+
+@charset "UTF-8";
+
+
+/*Общее*/
+
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #fff;
+
+}
+/*Хедер*/
+/*Главная страница*/
+.slides-item__title{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.banner__title{
+    font-size: 35px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/*Каталог*/
+.page-title{
+    font-size: 35px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/*Футер*/
+/**/
