@@ -1,3 +1,17 @@
+.debug > * {
+outline: 4px solid green;
+}
+.debug > * > * {
+outline: 3px solid red;
+}
+.debug > * > * > * {
+outline: 2px solid orange;
+}
+.debug > * > * > * > * {
+outline: 1px solid blue;
+}
+
+
 * {
     box-sizing: border-box; }
 *:before {
@@ -19,8 +33,64 @@ body {
     color: #fff;
 
 }
+
+.container{}
+    
+.clearfix{}
+
 /*Хедер*/
+
+.wrapper{}
+.main-header{}
+
+.main-header__logo-img{}
+.main-navigation{}
+.main-navigation__item{}
+.sub-menu{}
+.sub-menu__item{}
+.sub-menu__link{}
+.sub-menu__link--current{}
+.main-navigation__item{}
+.user-block{}
+
+.search-form{}
+.search-form__box{}
+.search-form__field{}
+.btn{}
+.search-form__btn{}
+
+.login{}
+.login-form{}
+.login-form__field{}
+.login-form__btn-enter{}
+.login-form__links{}
+
+.shopping-cart{}
+.shopping-form{}
+.shopping-form__td{}
+.btn-delete{}
+.btn-medium{}
+
+.store-info{}
+.store-info__hours{}
+.store-info__telephone{}
+
+
+
 /*Главная страница*/
+.slider-input{}{}
+.toggle{}
+.slider{}
+.slider-controls{}
+.slider-controls__label{}
+.slider-inner{}
+.slides{}
+.slides-item{}
+.slides-item__text{}
+.slides-item__title{}
+.btn--large{}
+
+
 .slides-item__title{
     font-size: 60px;
     line-height: 60px;
@@ -35,7 +105,33 @@ body {
     color: #fff;
 }
 
+.banners{}
+.banner{}
+.banners__left{}
+.banner__text{}
+
+.about{}
+.about__title{}
+.about__paragraph{}
+
+.blog{}
+.blog__introduction{}
+.blog__new-post{}
+
+.subscription{}
+.blog__new-post{}
+
+.subscription{}
+.subscription__text{}
+.subscription-form{}
+.subscription-form__field{}
+
+
 /*Каталог*/
+.breadcrumbs{}
+.breadcrumbs__item{}
+.breadcrumbs__item--current{}
+
 .page-title{
     font-size: 35px;
     line-height: 30px;
@@ -43,5 +139,63 @@ body {
     color: #fff;
 }
 
+.filters{}
+.filter{}
+.filter__title{}
+.filter__sorting-select{}
+.filter-select{}
+.filter-select__btn{}
+.price-controls{}
+.filters__scale{}
+.filters__bar{}
+.filters__toggle{}
+.filters__toggle--min{}
+.filters__input-radio{}
+.filters__input-checkbox{}
+.filters__btn-submit{}
+
+.catalog-list{}
+.catalog-item{}
+.catalog-item__hit-label{}
+.catalog-item__img{}
+.catalog-item__price{}
+.ruble{}
+.catalog-item__description{}
+.btn--medium{}
+
+.pagination{}
+.pagination__btn-prev{}
+.disabled{}
+.pagination__btn{}
+.pagination__btn--active{}
+.pagination__btn-next{}
+
+
 /*Футер*/
-/**/
+
+
+.main-footer{}
+.footer-map{}
+.footer-contacts{}
+.footer-contacts__text{}
+.footer-contacts__info{}
+.footer-links{}
+.footer-links__social{}
+.social-icon{}
+.social-icon--twitter{}
+.social-icon--instagram{}
+.social-icon--facebook{}
+.social-icon--vk{}
+.footer-links__documents{}
+.footer-links__documents-left{}
+.providers{}
+.footer-links__documents-right{}
+.copyright{}
+
+/* Всплывающее окно */
+.popup{}
+.popup__title{}
+.btn-delete{}
+.btn-delete--large{}
+.popup__field{}
+.popup__text{}
