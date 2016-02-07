@@ -31,45 +31,118 @@ body {
     line-height: 22px;
     font-weight: 500;
     color: #fff;
+    background-color: #849d8f;
 
 }
 
-.container{}
-    
-.clearfix{}
+.container{
+    min-width: 900px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /*Хедер*/
 
 .wrapper{}
+
 .main-header{}
 
-.main-header__logo-img{}
-.main-navigation{}
+.main-header__logo-img{
+    float: left;
+}
+
+.main-navigation{
+    float: left;
+    list-style: none;
+}
+
+.main-navigation__item{
+    display: inline-block;
+
+}
+.main-navigation__link{
+    text-decoration: none;
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+}
+
+
+.sub-menu__item{
+
+}
+
+.sub-menu__link{
+    text-decoration: none;
+}
+
+.sub-menu__link--current{
+
+}
+
+.main-navigation__item--sub-menu:hover .sub-menu{
+    display: block;
+}
+
 .main-navigation__item{}
-.sub-menu{}
-.sub-menu__item{}
-.sub-menu__link{}
-.sub-menu__link--current{}
-.main-navigation__item{}
-.user-block{}
+
+.user-block{
+    float: right;
+    position: relative;
+}
 
 .search-form{}
-.search-form__box{}
+.search-form__box{
+    display: none;
+    position: absolute;
+}
+.search-form:hover .search-form__box{
+    display: block;
+
+}
+
 .search-form__field{}
 .btn{}
 .search-form__btn{}
 
-.login{}
-.login-form{}
+.login{
+}
+
+.login-form{
+    display: none;
+    position: absolute;
+}
+
+.login:hover .login-form{
+    display: block;
+
+}
+
 .login-form__field{}
 .login-form__btn-enter{}
 .login-form__links{}
 
 .shopping-cart{}
-.shopping-form{}
+.shopping-form{
+    display: none;
+}
 .shopping-form__td{}
 .btn-delete{}
 .btn-medium{}
+
+.shopping-cart:hover .shopping-form{
+    display: block;
+    position: absolute;
+}
+
 
 .store-info{}
 .store-info__hours{}
