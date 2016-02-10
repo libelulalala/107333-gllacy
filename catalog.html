@@ -99,10 +99,10 @@
             <div class="">
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs__item">
-                        <a href="#">Главная</a>
+                        <a  class="breadcrumbs__link" href="index.html">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <a href="#">Каталог</a>
+                        <a   class="breadcrumbs__link" href="#">Каталог</a>
                     </li>
                     <li class="breadcrumbs__item breadcrumbs__item--current"><span>Сливочное</span></li>
                 </ul>
@@ -140,36 +140,41 @@
                         <!-- Фильтр жирности (radio)-->
                         <section class="filter">
                             <span class="filter__title">Жирность:</span>
-                            <input type="radio" name="fat-free" id="fat-free" class="filters__input-radio">
-                            <label for="fat-free">0%</label>
+                            <div class="filter__list  filter__list-radio">
+                                <input type="radio" name="fat-free" id="fat-free" class="filters__input-radio">
+                                <label for="fat-free">0%</label>
 
-                            <input type="radio" name="not-more-then-ten" id="not-more-then-ten"  class="filters__input-radio" checked>
-                            <label for="not-more-then-ten">до 10%</label>
+                                <input type="radio" name="not-more-then-ten" id="not-more-then-ten"  class="filters__input-radio" checked>
+                                <label for="not-more-then-ten">до 10%</label>
 
-                            <input type="radio" name="not-more-then-thirty" id="not-more-then-thirty" class="filters__input-radio">
-                            <label for="not-more-then-thirty">до 30%</label>
+                                <input type="radio" name="not-more-then-thirty" id="not-more-then-thirty" class="filters__input-radio">
+                                <label for="not-more-then-thirty">до 30%</label>
 
-                            <input type="radio" name="more-then-thirty" id="more-then-thirty" class="filters__input-radio">
-                            <label for="more-then-thirty">выше 30%</label>
+                                <input type="radio" name="more-then-thirty" id="more-then-thirty" class="filters__input-radio">
+                                <label for="more-then-thirty">выше 30%</label>
+                            </div>
+
                         </section>
 
                         <!-- Фильтр наполнителей (checkbox) -->
                         <section class="filter">
                             <span class="filter__title">Наполнители</span>
-                            <input type="checkbox" name="chocolate" id="chocolate" class="filters__input-checkbox" checked>
-                            <label for="chocolate">шоколадные</label>
+                            <div class="filter__list filter__list-checkbox">
+                                <input type="checkbox" name="chocolate" id="chocolate" class="filters__input-checkbox" checked>
+                                <label for="chocolate">шоколадные</label>
 
-                            <input type="checkbox" name="sugar" id="sugar"  class="filters__input-checkbox" checked>
-                            <label for="sugar">сахарные присыпки</label>
+                                <input type="checkbox" name="sugar" id="sugar"  class="filters__input-checkbox" checked>
+                                <label for="sugar">сахарные присыпки</label>
 
-                            <input type="checkbox" name="fruits" id="fruits" class="filters__input-checkbox">
-                            <label for="fruits">фрукты</label>
+                                <input type="checkbox" name="fruits" id="fruits" class="filters__input-checkbox">
+                                <label for="fruits">фрукты</label>
 
-                            <input type="checkbox" name="syrups" id="syrups" class="filters__input-checkbox">
-                            <label for="syrups">сиропы</label>
+                                <input type="checkbox" name="syrups" id="syrups" class="filters__input-checkbox">
+                                <label for="syrups">сиропы</label>
 
-                            <input type="checkbox" name="jams" id="jams" class="filters__input-checkbox">
-                            <label for="jams">джемы</label>
+                                <input type="checkbox" name="jams" id="jams" class="filters__input-checkbox">
+                                <label for="jams">джемы</label>
+                            </div>
                         </section>
 
                         <input class="btn filters__btn-submit" type="submit" value="Применить">
@@ -318,7 +323,7 @@
                         </div>
 
                         <div class="copyright">
-                            <a href="#"><img src="htmlacademy-logo.png"></a>
+                            <a href="#"><img src="img/htmlacademy-logo.png" width="108" height="37"></a>
                             <p>Сделано в <a href="#">HTML Academy</a> © 2016</p>
                         </div>
                     </section>

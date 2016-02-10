@@ -49,12 +49,13 @@ img{
 .main-header__logo-img{
     float: left;
     margin-left: -8px;
+    margin-top: 10px;
 }
 
 .main-navigation{
     float: left;
     width: 355px;
-    margin-top: 23px;
+    margin-top: 29px;
 }
 
 .main-navigation__list{
@@ -150,12 +151,28 @@ img{
     font-size: 14px;
     position: absolute;
 }
-.search:hover ~ .search-form__box{
+.search-form:hover  .search-form__box{
     display: block;
 }
 
 .search-form__field{}
-.btn{}
+
+.btn{
+    background-color: #f06240;
+    border: none;
+    border-radius: 30px;
+    padding: 9px 28px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+
+    background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+
+}
+
 .user-block__btn--search{
     padding: 0px;
     width: 32px;
@@ -280,9 +297,37 @@ img{
 
 
 /*Каталог*/
-.breadcrumbs{}
-.breadcrumbs__item{}
+.breadcrumbs{
+    list-style: none;
+    font-size: 0;
+    padding: 0;
+
+}
+
+.breadcrumbs__item{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+
+    margin-right: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+.breadcrumbs__link{
+    text-decoration: none;
+    margin: 0;
+    color: #fff;
+}
+
+.breadcrumbs__item:after{
+    content: '»'
+}
+
 .breadcrumbs__item--current{}
+
+.breadcrumbs__item--current:after{
+    content: none;
+}
 
 .page-title{
     font-size: 35px;
@@ -291,20 +336,59 @@ img{
     color: #fff;
 }
 
-.filters{}
-.filter{}
-.filter__title{}
-.filter__sorting-select{}
-.filter-select{}
-.filter-select__btn{}
-.price-controls{}
+.filters{
+    font-size: 0;
+}
+.filter{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-right: 15px;
+    font-size: 16px;
+
+}
+.filter__title{
+    font-size: 14px;
+}
+.filter__sorting-select{
+    width: 195px;
+}
+
+.filter-select select,
+.filter__list{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 9px 15px;
+}
+.filter__list-radio{
+    /*пока просто для наглядеости*/
+    width: 420px;
+}
+.filter__list-checkbox{
+    width: 703px;
+}
+
+.filter-select__btn{
+
+}
+.price-controls{
+    width: 220px;
+}
 .filters__scale{}
 .filters__bar{}
 .filters__toggle{}
 .filters__toggle--min{}
 .filters__input-radio{}
 .filters__input-checkbox{}
-.filters__btn-submit{}
+.filters__btn-submit{
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fff;
+    margin-top: 20px;
+}
 
 .catalog-list{
     font-size: 0px;
