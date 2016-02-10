@@ -165,10 +165,9 @@ img{
     font-size: 15px;
     text-decoration: none;
     color: #fff;
+    display: inline-block;
 
-    background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: linear-gradient(to top, #e84c36, #f26743);
     box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
 
 }
@@ -392,23 +391,34 @@ img{
 
 .catalog-list{
     font-size: 0px;
+
 }
 
 .catalog-item{
     display: inline-block;
     position: relative;
     vertical-align: top;
+    text-align: center;
     width: 23.2704%;
     margin-right: 1.95%;
+    margin-top: 40px;
 }
 
 .catalog-item:nth-child(4n){
     margin-right: 0;
 }
+
+.catalog-item:hover {
+    background-color: rgba(248,247,244,.3);
+
+}
+
 .catalog-item__hit-label{}
+
 .catalog-item__img{
     position: relative;
 }
+
 
 
 .catalog-item__img img{
@@ -428,12 +438,38 @@ img{
     height: 36px;
     display: inline-block;
     line-height: 0;
+
+    /*Для наглядности, при верстке декоративных элементов заменю на иконочный шрифт*/
     background-image: url("../img/ruble.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-.catalog-item__description{}
-.btn--medium{}
+
+
+.catalog-item__description{
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+}
+.catalog-item__btn{
+    position: absolute;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 22px;
+    z-index: 20;
+    display: none;
+}
+
+.catalog-item:hover .catalog-item__btn{
+    background-color: rgba(248, 247, 244, .3);
+    box-shadow: 0 20px 20px rgba(0,0,0,.4);
+    display: block;
+
+}
+
+.btn--medium{
+
+}
 
 .pagination{}
 .pagination__btn-prev{}
