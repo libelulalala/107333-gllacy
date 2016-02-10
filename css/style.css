@@ -157,6 +157,7 @@ img{
 
 .search-form__field{}
 
+/*Кнопки*/
 .btn{
     background-color: #f06240;
     border: none;
@@ -305,7 +306,7 @@ img{
 
 .banner__title{
     font-size: 35px;
-    line-height: 30px;
+    line-height: 2px;
     font-weight: 700;
     color: #fff;
 }
@@ -314,19 +315,21 @@ img{
 .banner{
     width: 48.8469%;
     padding: 23px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .banners__left{
     float: left;
     background-image: url(../img/rasberry-bgr.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #ab0a3c;
 }
 
 .banners__right{
     float: right;
     background-image: url(../img/chocolate-bgr.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #734425;
+
 }
 .banner__text{
     font-size: 18px;
@@ -335,12 +338,36 @@ img{
 
 .banner__btn{
     text-align: right;
-    margin-bottom: 33px;
 }
 
-.about{}
-.about__title{}
-.about__paragraph{}
+.about{
+    background-color: #efe3c7;
+    background-image: url(../img/wafer-bgr.jpg);
+    color: #323232;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    font-size: 0;
+    margin-top: 38px;
+}
+.about__title{
+    font-size: 24px;
+    line-height: 30px;
+}
+.about__paragraph{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    width: 42.3654%;
+    margin-left: 55px;
+}
+.about__paragraph:nth-child(2n+3){
+    margin-right: 0;
+}
 
 .blog{}
 .blog__introduction{}
@@ -625,7 +652,7 @@ img{
 
 .footer-links__documents{
     float: left;
-    width: 46.6%;
+    width: 48.8469%;
     margin: 0;
     padding-left: 10%;
     font-size: 13px;
