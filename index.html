@@ -7,7 +7,7 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
         <title>HTML Academy: Глейси</title>
     </head>
-    <body>
+    <body class="debug">
         <!-- Переключатели слайдера -->
         <div class="slider-input">
             <input class="toggle" type="radio" id="btn-1" name="toggle" checked>
@@ -39,18 +39,18 @@
                                 </li>
                             </ul>
                         </nav>
+
                         <div class="user-block">
                             <!-- Поиск -->
                             <form class="search-form" action="/echo" method="post">
-                                <label>search-ico</label>
                                 <div class="search-form__box">
                                     <input type="search" name="search" placeholder="Что ищем?" class="search-form__field">
-                                    <button class="btn search-form__btn">Поиск</button>
                                 </div>
+                                <button class="user-block__btn user-block__btn--search"></button>
                             </form>
 
                             <!-- Форма входа на сайт -->
-                            <a class="login" href="#">Вход</a>
+                            <a class="user-block__btn user-block__btn--login" href="#">Вход</a>
                             <div class="login-form">
                                 <form action="https://echo.glassy.ru"  method="post" enctype="text/plain">
                                     <label>
@@ -68,7 +68,7 @@
                             </div>
 
                             <!-- Корзина -->
-                            <a href="#" class="shopping-cart">Корзина</a>
+                            <a href="#" class="user-block__btn user-block__btn--shopping-cart">Пусто</a>
                             <div class="shopping-form">
                                 <table>
                                     <tr>
@@ -96,6 +96,7 @@
                                 <span class="store-info__telephone">8 812 450-25-25</span>
                             </div>
                         </div>
+
                     </div>
 
                         <!-- Слайдер -->
@@ -153,7 +154,7 @@
                             <span class="catalog-item__hit-label">Хит</span>
                             <div class="catalog-item__img">
                                 <img src="img/orange.jpg" width="267" height="267" alt="Orange">
-                                <span class="catalog-item__price">310 <span class="ruble">P</span>/кг</span>
+                                <span class="catalog-item__price">310 <span class="ruble"></span>/кг</span>
                             </div>
 
                             <a href="#" class="catalog-item__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -164,7 +165,7 @@
                             <span class="catalog-item__hit-label">Хит</span>
                             <div class="catalog-item__img">
                                 <img src="img/coffee.jpg" width="267" height="267" alt="Coffee">
-                                <span class="catalog-item__price">380 <span class="ruble">P</span>/кг</span>
+                                <span class="catalog-item__price">380 <span class="ruble"></span>/кг</span>
                             </div>
                             <a class="catalog-item__description" href="#">Сливочно-кофейное с кусочками шоколада</a>
                             <a href="#" class="btn btn--medium" href="#">Быстрый просмотр</a>
@@ -174,7 +175,7 @@
                             <span class="catalog-item__hit-label">Хит</span>
                             <div class="catalog-item__img">
                                 <img src="img/strawberry.jpg" width="267" height="267" alt="Strawberry">
-                                <span class="catalog-item__price">355 <span class="ruble">P</span>/кг</span>
+                                <span class="catalog-item__price">355 <span class="ruble"></span>/кг</span>
                             </div>
                             <a class="catalog-item__description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                             <a class="btn btn--medium" href="#">Быстрый просмотр</a>
@@ -184,7 +185,7 @@
                             <span class="catalog-item__hit-label">Хит</span>
                             <div class="catalog-item__img">
                                 <img src="img/caramel-cream.jpg" width="267" height="267" alt="Caramel cream">
-                                <span class="catalog-item__price">415 <span class="ruble">P</span>/кг</span>
+                                <span class="catalog-item__price">415 <span class="ruble"></span>/кг</span>
                             </div>
                             <a class="catalog-item__description" href="#">Сливочное крем-брюле с карамельной подливкой</a>
                             <a class="btn btn--medium" href="#">Быстрый просмотр</a>

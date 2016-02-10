@@ -19,18 +19,19 @@ body {
     font-weight: 500;
     color: #fff;
     background-color: #849d8f;
-
-
 }
 
-
+img{
+    max-width: 100%;
+    height: auto;
+}
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.background{
+.bgr{
 
 }
 
@@ -52,22 +53,36 @@ body {
 
 .main-navigation{
     float: left;
-
+    width: 355px;
+    margin-top: 23px;
 }
+
 .main-navigation__list{
     list-style: none;
     margin: 0;
     padding: 0;
+    font-size: 0px;
+    margin-left: 25px;
 }
 
 .main-navigation__item{
     display: inline-block;
-    margin: 0;
-    padding: 0;
+    vertical-align: top;
+    text-align: left;
 
+    margin-right: 27px;
+    padding: 0;
 }
+
+.main-navigation__item:last-child{
+    margin-right: 0;
+}
+
 .main-navigation__link{
     text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 23px;
     margin: 0;
     padding: 0;
 }
@@ -75,6 +90,8 @@ body {
 .sub-menu{
     display: none;
     position: absolute;
+    font-size: 16px;
+    line-height: 23px;
 }
 
 
@@ -99,31 +116,75 @@ body {
 .user-block{
     float: right;
     position: relative;
+    font-size: 0;
+    width: 267px;
+    margin-top: 23px;
+
+}
+.user-block__btn{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 9px 15px;
 }
 
-.search-form{}
+
+.search-form{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
 .search-form__box{
     display: none;
+    font-size: 14px;
     position: absolute;
 }
-.search-form:hover .search-form__box{
+.search:hover ~ .search-form__box{
     display: block;
-
 }
 
 .search-form__field{}
 .btn{}
-.search-form__btn{}
+.user-block__btn--search{
+    padding: 0px;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+    border-radius: 50%;
+}
 
-.login{
+.user-block__btn--login{
+    padding-left: 43px;
+    width: 93px;
+    background-image: url(../img/login-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
+    background-size: 21px;
 }
 
 .login-form{
     display: none;
     position: absolute;
+    font-size: 14px;
 }
 
-.login:hover + .login-form{
+.user-block__btn--login:hover + .login-form{
     display: block;
 
 }
@@ -132,15 +193,24 @@ body {
 .login-form__btn-enter{}
 .login-form__links{}
 
-.shopping-cart{}
+.user-block__btn--shopping-cart{
+    padding-left: 45px;
+    margin-right: 0;
+    width: 117px;
+    background-image: url(../img/basket-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
+    background-size: 21px;
+}
 .shopping-form{
     display: none;
+    font-size: 14px;
 }
 .shopping-form__td{}
 .btn-delete{}
 .btn-medium{}
 
-.shopping-cart:hover + .shopping-form{
+.user-block__btn--shopping-cart:hover + .shopping-form{
     display: block;
     position: absolute;
 }
@@ -181,8 +251,15 @@ body {
 }
 
 .banners{}
-.banner{}
-.banners__left{}
+.banner{
+    width: 48.8469%;
+}
+.banners__left{
+    float: left;
+}
+.banners__right{
+    float: right;
+}
 .banner__text{}
 
 .about{}
@@ -229,30 +306,48 @@ body {
 .filters__input-checkbox{}
 .filters__btn-submit{}
 
-.catalog-list{}
+.catalog-list{
+    font-size: 0px;
+}
+
 .catalog-item{
     display: inline-block;
     position: relative;
     vertical-align: top;
     width: 23.2704%;
-    margin-right: 1.9594%;
+    margin-right: 1.95%;
 }
 
 .catalog-item:nth-child(4n){
     margin-right: 0;
 }
 .catalog-item__hit-label{}
-.catalog-item__img{}
+.catalog-item__img{
+    position: relative;
+}
 
 
 .catalog-item__img img{
     border-radius: 50%;
 
-
 }
 
-.catalog-item__price{}
-.ruble{}
+.catalog-item__price{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    font-size: 40px;
+    color: #fff;
+}
+.ruble{
+    width: 31px;
+    height: 36px;
+    display: inline-block;
+    line-height: 0;
+    background-image: url("../img/ruble.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
 .catalog-item__description{}
 .btn--medium{}
 
@@ -286,7 +381,9 @@ body {
 .copyright{}
 
 /* Всплывающее окно */
-.popup{}
+.popup{
+    display: none;
+}
 .popup__title{}
 .btn-delete{}
 .btn-delete--large{}

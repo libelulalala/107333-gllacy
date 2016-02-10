@@ -35,16 +35,18 @@
 
                     <div class="user-block">
                         <!-- Поиск -->
-                        <form class="search-form" action="/echo" method="post">
-                            <label>search</label>
-                            <div class="search-form__box">
-                                <input type="search" name="search" placeholder="Что ищем?" class="search-form__field">
-                                <button class="btn search-form__btn">Поиск</button>
-                            </div>
-                        </form>
+                        <div class="user-block">
+                            <!-- Поиск -->
+                            <form class="search-form" action="/echo" method="post">
+                                <div class="search-form__box">
+                                    <input type="search" name="search" placeholder="Что ищем?" class="search-form__field">
+                                </div>
+                                <button class="user-block__btn user-block__btn--search"></button>
+                            </form>
+
 
                         <!-- Форма входа на сайт -->
-                        <a class="login" href="#">Вход</a>
+                        <a class="user-block__btn user-block__btn--login" href="#">Вход</a>
                         <div class="login-form">
                             <form action="https://echo.glassy.ru"  method="post" enctype="text/plain">
                                 <label>
@@ -62,7 +64,7 @@
                         </div>
 
                         <!-- Корзина -->
-                        <a href="#" class="shopping-cart">Корзина</a>
+                        <a href="#" class="user-block__btn user-block__btn--shopping-cart">Пусто</a>
                         <div class="shopping-form">
                             <table>
                                 <tr>
@@ -90,6 +92,7 @@
                             <span class="store-info__telephone">8 812 450-25-25</span>
                         </div>
                     </div>
+
                 </div>
             </header>
 
@@ -177,7 +180,7 @@
                     <div class="catalog-item">
                         <div class="catalog-item__img">
                             <img src="img/orange.jpg" width="267" height="267" alt="Orange">
-                            <span class="catalog-item__price">310 <span class="ruble">P</span>/кг</span>
+                            <span class="catalog-item__price">310 <span class="ruble"></span>/кг</span>
                         </div>
                         <a class="catalog-item__description" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                         <a class="btn btn--medium" href="#">Быстрый просмотр</a>
@@ -186,7 +189,7 @@
                     <div class="catalog-item">
                         <div class="catalog-item__img">
                             <img src="img/strawberry.jpg" width="267" height="267" alt="Strawberry">
-                            <span class="catalog-item__price">380 <span class="ruble">P</span>/кг</span>
+                            <span class="catalog-item__price">380 <span class="ruble"></span>/кг</span>
                         </div>
                         <a class="catalog-item__description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                         <a class="btn btn--medium" href="#">Быстрый просмотр</a>
@@ -195,7 +198,7 @@
                     <div class="catalog-item">
                         <div class="catalog-item__img">
                             <img src="img/coffee.jpg" width="267" height="267" alt="Coffee">
-                            <span class="catalog-item__price">355 <span class="ruble">P</span>/кг</span>
+                            <span class="catalog-item__price">355 <span class="ruble"></span>/кг</span>
                         </div>
                         <a class="catalog-item__description" href="#">Сливочно-кофейное с кусочками шоколада</a>
                         <a class="btn btn--medium" href="#">Быстрый просмотр</a>
@@ -204,7 +207,7 @@
                     <div class="catalog-item">
                         <div class="catalog-item__img">
                             <img src="img/caramel-cream.jpg" width="267" height="267" alt="Caramel cream">
-                            <span class="catalog-item__price">415 <span class="ruble">P</span>/кг</span>
+                            <span class="catalog-item__price">415 <span class="ruble"></span>/кг</span>
                         </div>
                         <a class="catalog-item__description" href="#">Сливочное крем-брюле с карамельной подливкой</a>
                         <a class="btn btn--medium" href="#">Быстрый просмотр</a>
@@ -213,7 +216,7 @@
                     <div class="catalog-item">
                         <div class="catalog-item__img">
                             <img src="img/cowberry.jpg" width="267" height="267" alt="Cowberry">
-                            <span class="catalog-item__price">325 <span class="ruble">P</span>/кг</span>
+                            <span class="catalog-item__price">325 <span class="ruble"></span>/кг</span>
                         </div>
                         <a class="catalog-item__description" href="#">Сливочное с брусничным джемом</a>
                         <a class="btn btn--medium" href="#">Быстрый просмотр</a>
@@ -222,7 +225,7 @@
                     <div class="catalog-item">
                         <div class="catalog-item__img">
                             <img src="img/blueberries.jpg" width="267" height="267" alt="Blueberries">
-                            <span class="catalog-item__price">410 <span class="ruble">P</span>/кг</span>
+                            <span class="catalog-item__price">410 <span class="ruble"></span>/кг</span>
                         </div>
                         <a class="catalog-item__description" href="#">Сливочно-черничное с цельными ягодами черники</a>
                         <a class="btn btn--medium" href="#">Быстрый просмотр</a>
@@ -231,7 +234,7 @@
                     <div class="catalog-item">
                         <div class="catalog-item__img">
                             <img src="img/lemon-caramel.jpg" width="267" height="267" alt="Lemon-caramel">
-                            <span class="catalog-item__price">375 <span class="ruble">P</span>/кг</span>
+                            <span class="catalog-item__price">375 <span class="ruble"></span>/кг</span>
                         </div>
                         <a class="catalog-item__description" href="#">Сливочно-лимонное с карамельной присыпкой</a>
                         <a class="btn btn--medium" href="#">Быстрый просмотр</a>
@@ -240,7 +243,7 @@
                     <div class="catalog-item">
                         <div class="catalog-item__img">
                             <img src="img/chocolate-chips.jpg" width="267" height="267" alt="Chocolate chips">
-                            <span class="catalog-item__price">320 <span class="ruble">P</span>/кг</span>
+                            <span class="catalog-item__price">320 <span class="ruble"></span>/кг</span>
                         </div>
                         <a class="catalog-item__description" href="#">Сливочное с шоколадной стружкой</a>
                         <a class="btn btn--medium" href="#">Быстрый просмотр</a>
@@ -249,7 +252,7 @@
                     <div class="catalog-item">
                         <div class="catalog-item__img">
                             <img src="img/vanilla-chocolate.jpg" width="267" height="267" alt="Vanilla with chocolate pieces">
-                            <span class="catalog-item__price">440 <span class="ruble">P</span>/кг</span>
+                            <span class="catalog-item__price">440 <span class="ruble"></span>/кг</span>
                         </div>
                         <a class="catalog-item__description" href="#">Сливочно-ванильное с кусочками шоколада</a>
                         <a class="btn btn--medium" href="#">Быстрый просмотр</a>
@@ -258,7 +261,7 @@
                     <div class="catalog-item">
                         <div class="catalog-item__img">
                             <img src="img/menthol.jpg" width="267" height="267" alt="Menthol">
-                            <span class="catalog-item__price">435 <span class="ruble">P</span>/кг</span>
+                            <span class="catalog-item__price">435 <span class="ruble"></span>/кг</span>
                         </div>
                         <a class="catalog-item__description" href="#">Сливочноe с ментоловым сиропом</a>
                         <a class="btn btn--medium" href="#">Быстрый просмотр</a>
@@ -267,7 +270,7 @@
                     <div class="catalog-item">
                         <div class="catalog-item__img">
                             <img src="img/dark-chocolate.jpg" width="267" height="267" alt="Dark chocolate">
-                            <span class="catalog-item__price">355 <span class="ruble">P</span>/кг</span>
+                            <span class="catalog-item__price">355 <span class="ruble"></span>/кг</span>
                         </div>
                         <a class="catalog-item__description" href="#">Сливочное с кусочками черного шоколада</a>
                         <a class="btn btn--medium" href="#">Быстрый просмотр</a>
@@ -276,7 +279,7 @@
                     <div class="catalog-item">
                         <div class="catalog-item__img">
                             <img src="img/mint.jpg" width="267" height="267" alt="Mint">
-                            <span class="catalog-item__price">420 <span class="ruble">P</span>/кг</span>
+                            <span class="catalog-item__price">420 <span class="ruble"></span>/кг</span>
                         </div>
                         <a class="catalog-item__description" href="#">Сливочное с мятным сиропом</a>
                         <a class="btn btn--medium" href="#">Быстрый просмотр</a>
