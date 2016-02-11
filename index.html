@@ -9,11 +9,11 @@
     </head>
     <body class="debug">
         <!-- Переключатели слайдера -->
-        <div class="slider-input">
-            <input class="toggle" type="radio" id="btn-1" name="toggle" checked>
-            <input class="toggle" type="radio" id="btn-2" name="toggle">
-            <input class="toggle" type="radio" id="btn-3" name="toggle">
-        </div>
+
+        <input class="toggle toggle--1" type="radio" id="btn-1" name="toggle" checked>
+        <input class="toggle toggle--2" type="radio" id="btn-2" name="toggle">
+        <input class="toggle toggle--3" type="radio" id="btn-3" name="toggle">
+
         <div class="bgr">
             <div class="wrapper">
                 <header class="main-header">
@@ -39,7 +39,6 @@
                                 </li>
                             </ul>
                         </nav>
-
                         <div class="user-block">
                             <!-- Поиск -->
                             <form class="search-form" action="/echo" method="post">
@@ -91,50 +90,42 @@
                                 <a href="#" class="btn btn--extra-small">Оформить заказ</a>
                             </div>
 
-                            <div class="store-info">
-                                <span class="store-info__hours">С 10 до 20, ежедневно</span>
-                                <span class="store-info__telephone">8 812 450-25-25</span>
+                            <div class="store-info clearfix">
+                                <span class="store-info__hours">С 10 до 20, ежедневно</span><br>
+                                <span class="store-info__telephone"> 8 812 450-25-25</span>
                             </div>
                         </div>
 
-                    </div>
-
-                        <!-- Слайдер -->
-                    <div class="slider  clearfix">
-
-                        <div class="slider-controls">
-                            <label class="slider-controls__label" for="btn-1"></label>
-                            <label class="slider-controls__label" for="btn-2"></label>
-                            <label class="slider-controls__label" for="btn-3"></label>
-                        </div>
-
-                        <!-- Слайды -->
-                        <div class="slider-inner">
-                            <div class="slides clearfix">
-                                <div class="slides-item">
-                                    <div class="slides-item__text">
-                                        <h1 class="slides-item__title">Крем-брюле и пломбир с малиновым джемом</h1>
-                                        <a href="#" class="btn btn--extra-large">Давайте оба!</a>
-                                    </div>
-                                </div>
-                                <div class="slides-item">
-                                    <div class="slides-item__text">
-                                        <h1 class="slides-item__title">Шоколадный пломбир и лимонный сорбет</h1>
-                                        <a href="#" class="btn btn--extra-large">Давайте оба!</a>
-                                    </div>
-                                </div>
-                                <div class="slides-item">
-                                    <div class="slides-item__text">
-                                        <h1 class="slides-item__title">Пломбир с помадкой и клубничный щербет</h1>
-                                        <a href="#" class="btn btn--extra-large">Давайте оба!</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </header>
+                <!-- Слайдер -->
+                <section class="slider">
 
-                <div class="">
+                    <!-- Слайды -->
+                    <div class="slider-inner">
+                            <div class="slide">
+                                <h1 class="slide__title">Крем-брюле и пломбир с малиновым джемом</h1>
+                                <a href="#" class="btn btn--extra-large">Давайте оба!</a>
+                            </div>
+
+                            <div class="slide">
+                                <h1 class="slide__title">Шоколадный пломбир и лимонный сорбет</h1>
+                                <a href="#" class="btn btn--extra-large">Давайте оба!</a>
+                            </div>
+
+                            <div class="slide">
+                                <h1 class="slide__title">Пломбир с помадкой и клубничный щербет</h1>
+                                <a href="#" class="btn btn--extra-large">Давайте оба!</a>
+                            </div>
+                        </div>
+
+                    <div class="slider-controls">
+                        <label class="slider-controls__control slider-controls__control--1" for="btn-1"></label>
+                        <label class="slider-controls__control slider-controls__control--2" for="btn-2"></label>
+                        <label class="slider-controls__control slider-controls__control--3" for="btn-3"></label>
+                    </div>
+                </section>
+
                     <div class="banners clearfix">
                         <article class="banner banners__left">
                             <h2 class="banner__title">Малинка даром!</h2>
@@ -235,7 +226,6 @@
                             </form>
                         </article>
                     </div>
-                </div>
 
 
                 <footer class="main-footer">
