@@ -16,7 +16,7 @@ body {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 22px;
-    font-weight: 500;
+    font-weight: 400;
     color: #fff;
     background-color: #849d8f;
 }
@@ -161,6 +161,7 @@ img{
 .btn{
     background-color: #f06240;
     border: none;
+    outline: none;
     border-radius: 30px;
     font-size: 15px;
     text-decoration: none;
@@ -182,7 +183,7 @@ img{
     padding-top: 15px;
     padding-right: 22px;
     padding-bottom: 15px;
-    width: 163px;
+    max-width: 163px;
 }
 .btn--little{
     padding-left: 24px;
@@ -369,17 +370,52 @@ img{
     margin-right: 0;
 }
 
-.blog{}
-.blog__introduction{}
-.blog__new-post{}
+.blog{
+    float: left;
+    width: 48.8469%;
+    padding-top: 4px;
+    padding-left: 20px;
+    padding-bottom: 85px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+    background-image: url(../img/blog-bgr.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #fff;
+    text-align: left;
+}
+.blog__introduction{
+    font-size: 16px;
+    color: #323232;
+}
 
-.subscription{}
-.blog__new-post{}
+.blog__new-post{
+    font-size: 24px;
+    color: #353535;
+    font-weight: 700;
+}
 
-.subscription{}
-.subscription__text{}
+.subscription{
+    float: right;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 48.8469%;
+    padding: 25px 20px;
+    background-color: #f8f7f4;
+    color: #5a5a5a;
+}
+
+.subscription__text{
+    font-size: 16px;
+    line-height: 22px;
+}
 .subscription-form{}
-.subscription-form__field{}
+.subscription-form__field{
+    padding: 13px;
+    width: 370px;
+    margin-right: 10px;
+}
 
 
 /*Каталог*/
@@ -474,6 +510,7 @@ img{
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid #fff;
     margin-top: 20px;
+    padding: 9px 15px;
 }
 
 .catalog-list{
@@ -541,6 +578,7 @@ img{
     width: 100%;
     min-height: 40px;
 }
+
 .catalog-item__btn{
     position: absolute;
     width: 100%;
@@ -556,10 +594,6 @@ img{
     display: block;
 
 }
-
-.btn--medium{}
-
-
 
 .pagination{
     text-align: right;
