@@ -160,60 +160,53 @@ img{
 /*Кнопки*/
 .btn{
     background-color: #f06240;
+    background-image: linear-gradient(to top, #e84c36, #f26743);
+    box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+    color: #fff;
     border: none;
     outline: none;
     border-radius: 30px;
+padding: 0 10px;
     font-size: 15px;
+    text-align: center;
     text-decoration: none;
-    color: #fff;
+
     display: inline-block;
-    background-image: linear-gradient(to top, #e84c36, #f26743);
-    box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+
 }
+.login-form__btn-enter{
+    min-width: 100px;
+    padding: 10px 20px;
+}
+
+
 .btn--extra-small{
-    padding-left: 22px;
-    padding-top: 10px;
-    padding-right: 21px;
-    padding-bottom: 10px;
-    width: 163px;
+    min-width: 163px;
+    padding: 10px;
 }
 
 .btn--small{
-    padding-left: 22px;
-    padding-top: 15px;
-    padding-right: 22px;
-    padding-bottom: 15px;
     max-width: 163px;
+    padding: 15px 20px;
 }
+
 .btn--little{
-    padding-left: 24px;
-    padding-top: 14px;
-    padding-right: 24px;
-    padding-bottom: 14px;
-    max-width: 190px;
+    padding: 14px 0;
+    min-width: 190px;
 }
 .btn--medium{
-    padding-left: 28px;
-    padding-top: 11px;
-    padding-right: 28px;
-    padding-bottom: 10px;
-    width: 195px;
+    min-width: 195px;
+    padding: 10px 0;
 }
 .btn--large{
-    padding-left: 32px;
-    padding-top: 14px;
-    padding-right: 32px;
-    padding-bottom: 14px;
-    width: 255px;
+    padding: 14px 0;
+    min-width: 255px;
     font-size: 17px;
     margin-top: 20px;
 }
 .btn--extra-large{
-    padding-left: 40px;
-    padding-top: 18px;
-    padding-right: 40px;
-    padding-bottom: 18px;
-    width: 280px;
+    padding: 18px 0;
+    min-width: 280px;
     font-size: 31.48px;
     border-radius: 50px;
 }
@@ -470,6 +463,7 @@ img{
     background-size: cover;
     background-color: #fff;
     text-align: left;
+    min-height: 220px;
 }
 .blog__introduction{
     font-size: 16px;
@@ -490,16 +484,18 @@ img{
     padding: 25px 20px;
     background-color: #f8f7f4;
     color: #5a5a5a;
+    min-height: 220px;
 }
 
 .subscription__text{
     font-size: 16px;
     line-height: 22px;
 }
+
 .subscription-form{}
 .subscription-form__field{
     padding: 13px;
-    width: 370px;
+    width: 60%;
     margin-right: 10px;
 }
 
@@ -553,8 +549,11 @@ img{
     text-align: left;
     margin-right: 15px;
     font-size: 16px;
-
 }
+.filter:nth-child(3){
+    margin-right: 0px;
+}
+
 .filter__title{
     font-size: 14px;
 }
@@ -573,10 +572,10 @@ img{
 }
 .filter__list-radio{
     /*пока просто для наглядеости*/
-    width: 420px;
+
 }
 .filter__list-checkbox{
-    width: 703px;
+
 }
 
 .filter-select__btn{
@@ -700,13 +699,17 @@ img{
 .main-footer{
     padding-bottom: 20px;
 }
+.main-footer .wrapper{
+    position: relative;
+}
+
 .footer-map{
     width:100%;
     height: 430px;
     margin: 0;
     background: url("../img/map-img.jpg");
     background-size: cover;
-    position: relative;
+
 }
 .footer-contacts{
     background-color: #fdfefe;
