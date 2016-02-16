@@ -17,8 +17,8 @@
                             <li class="main-navigation__item  main-navigation__item--sub-menu">
                                 <a class="main-navigation__link" href="catalog.html">Каталог</a>
                                 <ul class="sub-menu">
-                                    <li  class="sub-menu__item"><span href="#" class="sub-menu__link sub-menu__link--current">Новинки</span></li>
-                                    <li  class="sub-menu__item"><a href="#" class="sub-menu__link">Сливочное</a></li>
+                                    <li  class="sub-menu__item sub-menu__item--title"><span href="#" class="sub-menu__link">Новинки</span></li>
+                                    <li  class="sub-menu__item sub-menu__item--current"><span class="sub-menu__link">Сливочное</span></li>
                                     <li  class="sub-menu__item"><a href="#" class="sub-menu__link">Щербеты</a></li>
                                     <li  class="sub-menu__item"><a href="#" class="sub-menu__link">Фруктовый лед</a></li>
                                     <li  class="sub-menu__item"><a href="#" class="sub-menu__link">Мелорин</a></li>
@@ -46,46 +46,52 @@
 
 
                         <!-- Форма входа на сайт -->
-                        <a class="user-block__btn user-block__btn--login" href="#">Вход</a>
-                        <div class="login-form">
-                            <form action="https://echo.glassy.ru"  method="post" enctype="text/plain">
-                                <label>
-                                    <input type="email" name="email" placeholder="Электронная почта" class="login-form__field">
-                                </label>
-                                <label>
-                                    <input type="password" name="password" placeholder="Пароль" class="login-form__field">
-                                </label>
-                                <button type="submit" class="btn login-form__btn-enter">Войти</button>
-                                <div class="login-form__links">
-                                    <a href="#">Забыли пароль?</a>
-                                    <a href="#">Новая регистрация</a>
-                                </div>
-                            </form>
+                        <div class="login">
+                            <a class="user-block__btn user-block__btn--login" href="#">Вход</a>
+                            <div class="login-form">
+                                <form action="https://echo.glassy.ru"  method="post" enctype="text/plain">
+                                    <label>
+                                        <input type="email" name="email" placeholder="Электронная почта" class="login-form__field">
+                                    </label>
+                                    <label>
+                                        <input type="password" name="password" placeholder="Пароль" class="login-form__field">
+                                    </label>
+                                    <button type="submit" class="btn login-form__btn-enter">Войти</button>
+                                    <div class="login-form__links">
+                                        <a href="#">Забыли пароль?</a>
+                                        <a href="#">Новая регистрация</a>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
 
                         <!-- Корзина -->
-                        <a href="#" class="user-block__btn user-block__btn--shopping-cart">Пусто</a>
-                        <div class="shopping-form">
-                            <table>
-                                <tr>
-                                    <td class="shopping-form__td"><button type="button" name="delete" class="btn-delete"></button></td>
-                                    <td class="shopping-form__td">Пломбир с апельсиновым джемом</td>
-                                    <td class="shopping-form__td">1,5 кг<span>х 200 руб.</span></td>
-                                    <td class="shopping-form__td">300 руб.</td>
-                                <tr>
-                                <tr>
-                                    <td class="shopping-form__td"><button type="button" name="delete" class="btn-delete"></button></td>
-                                    <td class="shopping-form__td">Клубничный пломбир с присыпкой из белого шоколада</td>
-                                    <td class="shopping-form__td">1,5 кг <span>х 300 руб.</span></td>
-                                    <td class="shopping-form__td">450 руб.</td>
-                                <tr>
-                                <tr>
-                                   <td colspan="4">Итого</td>
-                                   <td>750 руб.</td>
-                                </tr>
-                            </table>
-                            <a href="#" class="btn btn--extra-small">Оформить заказ</a>
+                        <div class="shopping-cart">
+                            <a href="#" class="user-block__btn user-block__btn--shopping-cart">Пусто</a>
+                            <div class="shopping-form">
+                                <table>
+                                    <tr>
+                                        <td class="shopping-form__delete"><button type="button" name="delete" class="shopping-form__btn-delete"></button></td>
+                                        <td class="shopping-form__img"><img src="img/orange.jpg" width="33" height="33"></td>
+                                        <td class="shopping-form__name">Пломбир с апельсиновым джемом</td>
+                                        <td class="shopping-form__quantity">1,5 кг <span>х 200 руб.</span></td>
+                                        <td class="shopping-form__price">300 руб.</td>
+                                    <tr>
+                                    <tr>
+                                        <td class="shopping-form__delete"><button type="button" name="delete" class="shopping-form__btn-delete"></button></td>
+                                        <td class="shopping-form__img"><img src="img/strawberry.jpg" width="33" height="33"></td>
+                                        <td class="shopping-form__name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                                        <td class="shopping-form__quantity">1,5 кг <span>х 300 руб.</span></td>
+                                        <td class="shopping-form__price">450 руб.</td>
+                                    <tr>
+                                    <tr>
+                                        <td class="shopping-form__total" colspan="5">Итого: <span>750 руб.</span></td>
+                                    </tr>
+                                </table>
+                                <a href="#" class="btn btn--extra-small">Оформить заказ</a>
+                            </div>
                         </div>
+
 
                         <div class="store-info">
                             <span class="store-info__hours">С 10 до 20, ежедневно</span><br>
