@@ -160,6 +160,7 @@ img{
     list-style: none;
     padding: 0;
     display: none;
+    box-shadow: 0 20px 20px rgba(0,0,0,.4);
     position: absolute;
     top: 40px;
     left: -7px;
@@ -273,6 +274,7 @@ img{
 
 .search-form__box{
     display: none;
+    box-shadow: 0 20px 20px rgba(0,0,0,.4);
     font-size: 14px;
     position: absolute;
     background-color: #f8f7f4;
@@ -324,6 +326,7 @@ img{
 }
 .login-form{
     display: none;
+    box-shadow: 0 20px 20px rgba(0,0,0,.4);
     position: absolute;
     font-size: 14px;
     background-color: #f8f7f4;
@@ -383,6 +386,7 @@ img{
 }
 .shopping-form{
     display: none;
+    box-shadow: 0 20px 20px rgba(0,0,0,.4);
     font-size: 13px;
     background-color: #f8f7f4;
     width: 540px;
