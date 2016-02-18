@@ -1234,8 +1234,7 @@ circle-hover background-position: -98px -69px;
     margin-right: 0;
 }
 
-.hit::before{
-    content: "";
+.hit{
     position: absolute;
     z-index: 5;
     top: 0;
