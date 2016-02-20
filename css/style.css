@@ -57,7 +57,7 @@ img{
 .btn{
     background-color: #f06240;
     background-image: linear-gradient(to top, #e84c36, #f26743);
-    box-shadow: 0px 1px 2px 0px rgba(151, 90, 75, 1);
+    box-shadow: 0px 2px 2px rgba(172, 16, 0, .64);
     color: #fff;
     border: none;
     outline: none;
@@ -73,13 +73,13 @@ img{
 .btn:hover{
     background-color: #f58569;
     background-image: linear-gradient(to top, #ec6f5e, #f58569);
-    box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 1);
+    box-shadow: 0px 2px 2px rgba(172, 16, 0, 1);
 }
 
 .btn:active{
     background-color: #dc5539;
     background-image: linear-gradient(to top, #e1613e, #d84732);
-    box-shadow: 0px 1px 2px 0px rgba(167, 48, 31,1) inset;
+    box-shadow: 0px 2px 2px rgba(167, 48, 31,1) inset;
 }
 
 .login-form__btn-enter{
@@ -803,65 +803,72 @@ img{
     margin-top: 0px;
     margin-bottom: 20px;
 }
+
+.about{
+    background-color: #efe3c7;
+    background-image: url(../img/wafer-bgr.jpg);
+    color: #323232;
+    padding: 20px 0px 20px 20px;
+    font-size: 0;
+    margin-top: 38px;
+    border-radius: 15px;
+
+}
+.about__title{
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 0px;
+}
 .about__paragraph{
     display: inline-block;
-    vertical-align: baseline;
     position: relative;
     vertical-align: top;
     text-align: left;
     font-size: 16px;
     line-height: 22px;
     margin-top: 5px;
-    margin-bottom: 0px;
     font-weight: 400;
-    width: 49%;
-    padding-bottom: 13px;
-}
-.about__text{
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    width: 86.8%;
-    max-width: 87.7%;
+    width: 42.3654%;
+    margin-left: 57px;
 }
 
 .about__paragraph:nth-child(2n+3){
-    margin-left: 2%;
+    margin-left: 60px;
 }
 
-.about__icon{
-    content: "";
-    background-image: url("../img/spritesheet-about.png");
+.about__paragraph::before{
+    content: '';
+    background-image: url('../img/spritesheet-about.png');
     background-repeat: no-repeat;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    position: relative;
-    top: -15px;
+    display: block;
+    position: absolute;
+    left: -60px;
+    top: -20px;
 }
-.about__icon--ice-cream{
+.about__paragraph--ice-cream::before{
     width: 49px;
     height: 49px;
     background-position: -64px -5px;
 }
 
-.about__icon--ferm{
+.about__paragraph--ferm::before{
     width: 48px;
     height: 49px;
     background-position: -5px -64px;
 }
 
-.about__icon--milk{
+.about__paragraph--milk::before{
     width: 49px;
     height: 49px;
     background-position: -5px -5px;
 }
 
-.about__icon--thermo{
+.about__paragraph--thermo::before{
     width: 48px;
     height: 49px;
     background-position: -63px -64px;
 }
+
 
 .blog{
     float: left;
