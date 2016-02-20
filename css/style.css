@@ -1,12 +1,12 @@
 
-* {
-    box-sizing: border-box; }
-*:before {
-    box-sizing: border-box; }
-*:after {
-    box-sizing: border-box; }
-
-@charset "UTF-8";
+*{box-sizing: border-box;
+}
+*:before{
+    box-sizing: border-box;
+}
+*:after{
+    box-sizing: border-box;
+}
 
 
 @font-face {
@@ -677,7 +677,7 @@ img{
 
 .slide{
     float: left;
-    width: 33%;
+    width: 33.33%;
     text-align: center;
 }
 .slide__text{
@@ -924,7 +924,9 @@ img{
     border-radius: 15px;
     background: url("../img/subscribe-bgr.png");
     background-size: 100% 100%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
 }
 
@@ -934,16 +936,13 @@ img{
 }
 
 .subscription-form{
-    position: absolute;
-    left: 25px;
-    right: 25px;
-    bottom: 40px;
     display: flex;
     justify-content: space-between;
 }
 
-.subscription-form__container{
+.subscription-form__wrapper{
     flex-grow: 1;
+    margin-right: 10px;
 }
 
 .subscription-form__label{
@@ -953,7 +952,6 @@ img{
 
 .subscription-form__field{
     padding: 13px;
-    margin-right: 10px;
     width: 100%;
     border-radius: 5px;
     border: none;
@@ -1520,7 +1518,9 @@ position: relative;
     border-radius: 15px;
     z-index: 5;
 }
-
+.footer-contacts span{
+    width: 100%;
+}
 .footer-contacts__text{
     font-size: 14px;
     line-height: 20px;
@@ -1568,7 +1568,7 @@ position: relative;
     box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7);
 }
 
-.social-icon:focus{
+.social-icon:active{
     background-image: url("../img/spritesheet-social.png");
     box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7),
     0 2px 1px 0 #888888 inset;
@@ -1626,8 +1626,9 @@ position: relative;
     content: "";
     display: block;
     position: absolute;
-    background-image: url("../img/providers-icon.svg");
+    background-image: url("../img/spritesheet-icons.png");
     background-repeat: no-repeat;
+    background-position: -5px -153px;
     width: 15px;
     height: 13px;
     left: -20px;
@@ -1653,7 +1654,56 @@ position: relative;
     color: #deb49a;
     border-bottom: 1px solid #deb49a;
 }
+
+
+/*Всплывающие лейблы*/
+.search-form__container,
+.login-form__container,
+.subscription-form__container,
+.popup__container{
+    position: relative;
+}
+
+.subscription-form__label,
+.popup__label,
+.search-form__label,
+.login-form__label{
+    display: block;
+    position: absolute;
+    transition: top 0.5s ease;
+    color: #999;
+}
+.subscription-form__label,
+.popup__label{
+    font-size: 16px;
+    top: 11px;
+    left: 11px;
+}
+
+.search-form__label,
+.login-form__label{
+    font-size: 14px;
+    top: 8px;
+    left: 8px;
+}
+
+.subscription-form__field:focus + .subscription-form__label,
+.popup__field:focus + .popup__label{
+    top: -20px;
+    font-size: 14px;
+    color: #5b9ddf;
+}
+
+.search-form__field:focus + .search-form__label,
+.login-form__field:focus + .login-form__label{
+    top: -17px;
+    font-size: 11px;
+    color: #5b9ddf;
+}
+
+
 /* Всплывающее окно */
+
 .popup{
     display: none;
     position: fixed;
