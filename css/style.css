@@ -1498,6 +1498,7 @@ position: relative;
     margin: 0;
     background: url("../img/map-img.jpg");
     background-size: cover;
+    z-index: 4;
 
 
 }
@@ -1510,6 +1511,7 @@ position: relative;
     width: 303px;
     padding: 13px 14px 25px 29px;
     border-radius: 15px;
+    z-index: 5;
 }
 
 .footer-contacts__text{
