@@ -46,7 +46,7 @@
                                 <form class="search-form"  action="search.glassy.ru" method="get">
                                     <div class="search-form__box">
                                         <div class="search-form__container">
-                                            <input type="search" name="search" id="search" class="search-form__field" required>
+                                            <input type="search" name="search" id="search" class="search-form__field" placeholder="Что ищем?" required>
                                             <label class="search-form__label" for="search">Что ищем?</label>
                                         </div>
                                     </div>
@@ -59,11 +59,11 @@
                                     <div class="login-form">
                                         <form action="https://echo.glassy.ru"  method="post" enctype="text/plain">
                                             <div class="login-form__container">
-                                                <input id="login" type="email" name="email" class="login-form__field login-form__field--email">
+                                                <input id="login" type="email" name="email" class="login-form__field login-form__field--email" placeholder="Электронная почта" required>
                                                 <label class="login-form__label" for="login">Электронная почта</label>
                                             </div>
                                             <div class="login-form__container">
-                                                <input id="password" type="password" name="password" class="login-form__field login-form__field--password" required>
+                                                <input id="password" type="password" name="password" class="login-form__field login-form__field--password" placeholder="Пароль" required>
                                                 <label  class="login-form__label" for="password">Пароль</label>
                                             </div>
                                             <button type="submit" class="btn login-form__btn-enter">Войти</button>
@@ -251,7 +251,7 @@
                                 <form action="mailto:admin@glassy.ru" enctype="text/plain" class="subscription-form">
                                     <div class="subscription-form__wrapper">
                                         <div class="subscription-form__container">
-                                            <input id="email" type="email" name="email" class="subscription-form__field">
+                                             <input id="email" type="email" name="email" class="subscription-form__field" placeholder="Электронная почта" required>
                                             <label for="email" class="subscription-form__label">Электронная почта</label>
                                         </div>
                                     </div>
@@ -320,18 +320,18 @@
                 <button type="button" class="popup__btn-close" title="Закрыть"></button>
 
                 <div class="popup__container">
-                    <input  class="popup__field popup__field--username" type="text" name="username" id="username" required>
-                    <label class="popup__label" for="username">Как вас зовут?</label>
+                    <input  class="popup__field popup__field--username" type="text" name="username" id="username" placeholder="Как вас зовут?" required>
+                    <label class="popup__label popup__label--username" for="username">Как вас зовут?</label>
                 </div>
 
                 <div class="popup__container">
-                    <input type="email" name="email" class="popup__field popup__field--email" id="popup-email">
-                    <label  class="popup__label" for="popup-email">Ваша почта для ответа?</label>
+                    <input type="email" name="email" class="popup__field popup__field--email" id="popup-email"  placeholder="Ваша почта для ответа?" required>
+                    <label  class="popup__label popup__label--email" for="popup-email">Ваша почта для ответа?</label>
                 </div>
 
                 <div class="popup__container">
-                    <textarea name="text" id="letter-text" rows="6" class="popup__field popup__field--text" required></textarea>
-                    <label  class="popup__label" for="letter-text">Напишите что-нибудь..</label>
+                    <textarea name="text" id="letter-text" rows="6" class="popup__field popup__field--text"  placeholder="Напишите что-нибудь.." required></textarea>
+                    <label  class="popup__label popup__label--text" for="letter-text">Напишите что-нибудь..</label>
                 </div>
 
                 <button type="submit" class="btn popup__btn">Отправить</button>

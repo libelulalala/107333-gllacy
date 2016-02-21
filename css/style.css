@@ -1657,6 +1657,7 @@ position: relative;
 
 
 /*Всплывающие лейблы*/
+
 .search-form__container,
 .login-form__container,
 .subscription-form__container,
@@ -1670,59 +1671,12 @@ position: relative;
 .login-form__label{
     display: block;
     position: absolute;
-    transition: top 0.5s ease;
-    color: #999;
-}
-.subscription-form__label,
-.popup__label{
-    font-size: 16px;
-    top: 11px;
-    left: 11px;
-}
-
-.search-form__label,
-.login-form__label{
+    top: 10px;
+    left: 10px;
+    transition: top 0.7s ease, opacity 0.7s ease;
+    opacity: 0;
+    color: #f8f7f4;
     font-size: 14px;
-    top: 8px;
-    left: 8px;
-}
-
-.popup__field--email:invalid + .popup__label,
-.popup__field--username:valid + .popup__label,
-.popup__field--text:valid + .popup__label,
-.subscription-form__field:invalid + .subscription-form__label{
-    top: -20px;
-    font-size: 14px;
-    color: #9a9a9a;
-}
-
-.login-form__field--email:invalid + .login-form__label{
-    top: -17px;
-    font-size: 11px;
-    color: #9a9a9a;
-}
-
-.subscription-form__field:focus + .subscription-form__label,
-.subscription-form__field:focus:valid + .subscription-form__label,
-.popup__field:focus + .popup__label,
-.popup__field--email:focus:valid + .popup__label{
-    top: -20px;
-    font-size: 14px;
-    color: #5b9ddf;
-}
-.login-form__field--password:valid + .login-form__label{
-    top: -17px;
-    font-size: 11px;
-    color: #9a9a9a;
-}
-.search-form__field:focus + .search-form__label,
-.search-form__field:valid + .search-form__label,
-.login-form__field:focus + .login-form__label,
-.login-form__field--password:focus:valid + .login-form__label,
-.login-form__field--email:focus:valid + .login-form__label{
-    top: -17px;
-    font-size: 11px;
-    color: #5b9ddf;
 }
 
 .subscription-form__field,
@@ -1732,12 +1686,61 @@ position: relative;
     color: #353535;
 }
 
-.subscription-form__field:valid  + .subscription-form__label,
-.popup__field:valid + .popup__label,
-.search-form__field:valid + .search-form__label,
-.login-form__field:valid + .login-form__label{
+.popup__field:not(:placeholder-shown) + .popup__label,
+.subscription-form__field:not(:placeholder-shown) + .subscription-form__label{
+    top: -20px;
+    opacity: 1;
+    font-size: 14px;
     color: #9a9a9a;
 }
+
+
+.search-form__field:not(:placeholder-shown) + .search-form__label,
+.login-form__field:not(:placeholder-shown) + .login-form__label{
+    top: -17px;
+    opacity: 1;
+    font-size: 11px;
+    color: #9a9a9a;
+}
+
+.search-form__field:focus + .search-form__label,
+.login-form__field:focus + .login-form__label{
+    top: -17px;
+    opacity: 1;
+    font-size: 11px;
+    color: #5b9ddf;
+}
+
+.popup__field:focus + .popup__label,
+.subscription-form__field:focus + .subscription-form__label{
+    top: -20px;
+    opacity: 1;
+    font-size: 14px;
+    color: #5b9ddf;
+}
+
+.search-form__field:valid + .search-form__label,
+.login-form__field:valid + .login-form__label{
+    top: -17px;
+    font-size: 11px;
+    opacity: 1;
+    color: #9a9a9a;
+}
+
+.popup__field:valid + .popup__label,
+.subscription-form__field:valid + .subscription-form__label{
+    top: -20px;
+    opacity: 1;
+    font-size: 14px;
+    color: #9a9a9a;
+}
+
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
 
 
 /* Всплывающее окно */
