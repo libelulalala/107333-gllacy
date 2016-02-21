@@ -1810,7 +1810,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.7s eas
     display: block;
     position: absolute;
     top: 15px;
-    right: 30px;
+    right: 15px;
     width: 25px;
     height: 25px;
 }
