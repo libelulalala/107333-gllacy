@@ -11,12 +11,8 @@
 
 @font-face {
     font-family: "rouble";
-    src: url("../fonts/rouble/rouble.eot");
-    src: url("../fonts/rouble/rouble.eot?") format("embedded-opentype"),
-         url("../fonts/rouble/rouble.woff2") format("woff2"),
-         url("../fonts/rouble/rouble.woff") format("woff"),
-         url("../fonts/rouble/rouble.ttf") format("truetype");
-
+    src: url("../fonts/rouble/rouble.woff2") format("woff2"),
+         url("../fonts/rouble/rouble.woff") format("woff");
 }
 
 
@@ -56,7 +52,9 @@ img{
 /*Кнопки*/
 .btn{
     background-color: #f06240;
-    background-image: linear-gradient(to top, #e84c36, #f26743);
+    background-image: -webkit-linear-gradient(#f26843 0%, #e74a35 100%);
+         background-image: -o-linear-gradient(#f26843 0%, #e74a35 100%);
+            background-image: linear-gradient(#f26843 0%, #e74a35 100%);
     box-shadow: 0px 2px 2px rgba(172, 16, 0, .64);
     color: #fff;
     border: none;
@@ -72,13 +70,17 @@ img{
 }
 .btn:hover{
     background-color: #f58569;
-    background-image: linear-gradient(to top, #ec6f5e, #f58569);
+    background-image: -webkit-linear-gradient(to top, #ec6f5e, #f58569);
+         background-image: -o-linear-gradient(to top, #ec6f5e, #f58569);
+            background-image: linear-gradient(to top, #ec6f5e, #f58569);
     box-shadow: 0px 2px 2px rgba(172, 16, 0, 1);
 }
 
 .btn:active{
     background-color: #dc5539;
-    background-image: linear-gradient(to top, #e1613e, #d84732);
+    background-image: -webkit-linear-gradient(to top, #ec6f5e, #d84732);
+         background-image: -o-linear-gradient(to top, #ec6f5e, #d84732);
+            background-image: linear-gradient(to top, #e1613e, #d84732);
     box-shadow: 0px 2px 2px rgba(167, 48, 31,1) inset;
 }
 
@@ -117,7 +119,7 @@ img{
 
 .btn--extra-large{
     padding: 20px 0;
-    margin-left: 15px;
+    margin-left: 10px;
     min-width: 280px;
     font-size: 31.48px;
     border-radius: 50px;
@@ -127,7 +129,7 @@ img{
 .filters__btn-submit{
     background-image: none;
     box-shadow: 0 0 0 2px #fff;
-    width: 145px;
+    width: 140px;
     background-color: rgba(255, 255, 255, 0.2);
     margin-top: 30px;
     padding: 8px 0px;
@@ -141,15 +143,15 @@ img{
     color: #383939;
 }
 
-.filters__btn-submit:active,
-.filters__btn-submit:focus{
-    margin-top: 28px;
+.filters__btn-submit:active{
     background-image: none;
     color: #383939;
     background-color: #eaeaea;
     border: none;
-    width: 149px;
-    padding: 10px 0;
+    width: 144px;
+    margin-top: 28px;
+    margin-left: -2px;
+    padding: 10px 0px;
     box-shadow:  0px 2px 2px 0px rgba(108, 109, 108, 1) inset;
 }
 
@@ -690,7 +692,7 @@ img{
 
 .slider-controls{
     position: absolute;
-    bottom: 57px;
+    bottom: 65px;
     display: block;
     width: 100px;
 }
@@ -718,7 +720,7 @@ img{
 .slide__title{
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     font-weight: 700;
     color: #fff;
 }
@@ -751,7 +753,7 @@ img{
 
 .banner{
     width: 48.8469%;
-    padding: 23px 20px 90px;
+    padding: 23px 20px 60px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -794,11 +796,12 @@ img{
     background-color: #efe3c7;
     background-image: url(../img/wafer-bgr.jpg);
     color: #323232;
-    padding: 20px 20px 12px;
+    padding: 20px 10px 10px 20px;
     font-size: 0;
     border-radius: 15px;
-
+    margin-top: 30px;
 }
+
 .about__title{
     font-size: 24px;
     line-height: 30px;
@@ -806,16 +809,6 @@ img{
     margin-bottom: 20px;
 }
 
-.about{
-    background-color: #efe3c7;
-    background-image: url(../img/wafer-bgr.jpg);
-    color: #323232;
-    padding: 20px 0px 20px 20px;
-    font-size: 0;
-    margin-top: 38px;
-    border-radius: 15px;
-
-}
 .about__title{
     font-size: 24px;
     line-height: 30px;
@@ -835,7 +828,7 @@ img{
 }
 
 .about__paragraph:nth-child(2n+3){
-    margin-left: 60px;
+    margin-left: 68px;
 }
 
 .about__paragraph::before{
@@ -845,7 +838,7 @@ img{
     display: block;
     position: absolute;
     left: -60px;
-    top: -20px;
+    top: -15px;
 }
 .about__paragraph--ice-cream::before{
     width: 49px;
@@ -919,7 +912,7 @@ img{
     margin-top: 40px;
     margin-bottom: 40px;
     width: 48.8469%;
-    padding: 15px 25px;
+    padding: 15px 25px 40px;
     background-color: #f8f7f4;
     color: #5a5a5a;
     min-height: 220px;
@@ -1027,8 +1020,12 @@ img{
     font-size: 16px;
     padding-bottom: 10px;
 }
+
 .filter:nth-child(3){
     margin-right: 0px;
+}
+.filter:last-child{
+    margin-right: 18px;
 }
 
 .filter__title{
@@ -1272,11 +1269,11 @@ img{
 .hits-list{
     font-size: 0px;
     margin-bottom: 70px;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
 }
 .catalog-list{
     font-size: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 
 .catalog-item{
@@ -1420,8 +1417,8 @@ img{
 .pagination__btn-prev::before{
   content: "";
   position: absolute;
-  top: 10px;
-  left: 0px;
+  top: 8px;
+  left: 5px;
   width: 10px;
   height: 10px;
   border-left: 2px solid #fff;
@@ -1434,8 +1431,8 @@ img{
 .pagination__btn-next::before{
   content: "";
   position: absolute;
-  top: 10px;
-  right: 0px;
+  top: 8px;
+  right: 5px;
   width: 10px;
   height: 10px;
   border-right: 2px solid #fff;
@@ -1481,7 +1478,7 @@ img{
 
 .main-content{
     padding-top: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     border-bottom: 1px solid #a9bbb1;
 }
 
@@ -1490,7 +1487,8 @@ img{
 .main-footer{
     padding-bottom: 20px;
 }
-.main-footer .wrapper{
+
+.main-footer__container{
 position: relative;
 }
 
@@ -1552,7 +1550,7 @@ position: relative;
 }
 .footer-links__social{
     margin-top: 6px;
-    width: 25%;
+    width: 23.2704%;
 }
 .social-icon{
     background-image: url("../img/spritesheet-social.png");
@@ -1602,11 +1600,11 @@ position: relative;
 }
 
 .footer-links__documents{
-    width: 47%;
-    margin: 0;
-    padding-left: 5%;
+    width: 48.8469%;
+    display: flex;
+    justify-content: center;
     font-size: 13px;
-
+    margin: 0 2.2%
 }
 
 .footer-links__documents a:hover,
@@ -1616,8 +1614,9 @@ position: relative;
 }
 
 .footer-links__documents-left{
-    float: left;
-    width: 114px;
+    margin-right: 30px;
+    width: 115px;
+
 }
 
 .providers{
@@ -1638,17 +1637,13 @@ position: relative;
 }
 
 .footer-links__documents-right{
-    float: left;
-    width: 166px;
-    margin-left: 27px;
+    width: 170px;
 }
+
 .copyright{
-    width: 23.2704%;
-    margin-left: 1.95%;
-    padding-left: 1.2%;
+    width: 190px;
     line-height: 0px;
     font-size: 12px;
-    text-align: left;
 }
 
 .creator:hover,
