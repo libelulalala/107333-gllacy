@@ -46,7 +46,7 @@
                                 <form class="search-form"  action="search.glassy.ru" method="get">
                                     <div class="search-form__box">
                                         <div class="search-form__container">
-                                            <input type="search" name="search" id="search" class="search-form__field">
+                                            <input type="search" name="search" id="search" class="search-form__field" required>
                                             <label class="search-form__label" for="search">Что ищем?</label>
                                         </div>
                                     </div>
@@ -59,11 +59,11 @@
                                     <div class="login-form">
                                         <form action="https://echo.glassy.ru"  method="post" enctype="text/plain">
                                             <div class="login-form__container">
-                                                <input id="login" type="email" name="email" class="login-form__field">
+                                                <input id="login" type="email" name="email" class="login-form__field login-form__field--email">
                                                 <label class="login-form__label" for="login">Электронная почта</label>
                                             </div>
                                             <div class="login-form__container">
-                                                <input id="password" type="password" name="password" class="login-form__field">
+                                                <input id="password" type="password" name="password" class="login-form__field login-form__field--password" required>
                                                 <label  class="login-form__label" for="password">Пароль</label>
                                             </div>
                                             <button type="submit" class="btn login-form__btn-enter">Войти</button>
@@ -320,7 +320,7 @@
                 <button type="button" class="popup__btn-close" title="Закрыть"></button>
 
                 <div class="popup__container">
-                    <input  class="popup__field popup__field-username" type="text" name="username" id="username">
+                    <input  class="popup__field popup__field--username" type="text" name="username" id="username" required>
                     <label class="popup__label" for="username">Как вас зовут?</label>
                 </div>
 
@@ -330,7 +330,7 @@
                 </div>
 
                 <div class="popup__container">
-                    <textarea name="text" id="letter-text" rows="6" class="popup__field popup__field--text"></textarea>
+                    <textarea name="text" id="letter-text" rows="6" class="popup__field popup__field--text" required></textarea>
                     <label  class="popup__label" for="letter-text">Напишите что-нибудь..</label>
                 </div>
 

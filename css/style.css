@@ -1687,25 +1687,63 @@ position: relative;
     left: 8px;
 }
 
+.popup__field--email:invalid + .popup__label,
+.popup__field--username:valid + .popup__label,
+.popup__field--text:valid + .popup__label,
+.subscription-form__field:invalid + .subscription-form__label{
+    top: -20px;
+    font-size: 14px;
+    color: #9a9a9a;
+}
+
+.login-form__field--email:invalid + .login-form__label{
+    top: -17px;
+    font-size: 11px;
+    color: #9a9a9a;
+}
+
 .subscription-form__field:focus + .subscription-form__label,
-.popup__field:focus + .popup__label{
+.subscription-form__field:focus:valid + .subscription-form__label,
+.popup__field:focus + .popup__label,
+.popup__field--email:focus:valid + .popup__label{
     top: -20px;
     font-size: 14px;
     color: #5b9ddf;
 }
-
+.login-form__field--password:valid + .login-form__label{
+    top: -17px;
+    font-size: 11px;
+    color: #9a9a9a;
+}
 .search-form__field:focus + .search-form__label,
-.login-form__field:focus + .login-form__label{
+.search-form__field:valid + .search-form__label,
+.login-form__field:focus + .login-form__label,
+.login-form__field--password:focus:valid + .login-form__label,
+.login-form__field--email:focus:valid + .login-form__label{
     top: -17px;
     font-size: 11px;
     color: #5b9ddf;
+}
+
+.subscription-form__field,
+.popup__field,
+.search-form__field,
+.login-form__field{
+    color: #353535;
+}
+
+.subscription-form__field:valid  + .subscription-form__label,
+.popup__field:valid + .popup__label,
+.search-form__field:valid + .search-form__label,
+.login-form__field:valid + .login-form__label{
+    color: #9a9a9a;
 }
 
 
 /* Всплывающее окно */
 
 .popup{
-    display: none;
+    display: nonhe;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1768,7 +1806,7 @@ position: relative;
     box-shadow: 0 0 0 2px #8fbdec inset;
 }
 
-.popup__field-username,
+.popup__field--username,
 .popup__field--email{
     width: 265px;
 }
