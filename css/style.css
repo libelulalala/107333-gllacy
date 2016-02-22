@@ -1518,7 +1518,7 @@ position: relative;
     right: 2.2%;
     top: 65px;
     width: 303px;
-    padding: 13px 14px 25px 29px;
+    padding: 15px 15px 30px 25px;
     border-radius: 15px;
     z-index: 5;
 }
@@ -1648,6 +1648,7 @@ position: relative;
     width: 190px;
     line-height: 0px;
     font-size: 12px;
+    margin-top: 5px
 }
 
 .creator:hover,
