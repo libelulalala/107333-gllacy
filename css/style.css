@@ -826,6 +826,9 @@ img{
     margin: 0;
 
 }
+.about__paragraph:nth-child(2n+3){
+    margin-left: 2.3%;
+}
 
 .about__paragraph::before{
     content: '';
