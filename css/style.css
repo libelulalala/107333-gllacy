@@ -1201,14 +1201,16 @@ img{
 
 .filters__toggle--min:hover{
     left: -6px;
+    bottom: -9px;
 }
 
 .filters__toggle--max {
     right: -5px;
 }
 
-.filters__toggle--min:hover{
+.filters__toggle--max:hover{
     right: -6px;
+    bottom: -9px;
 }
 
 .filters__input-checkbox,
