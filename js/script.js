@@ -35,6 +35,7 @@ if (event.keyCode == 27) {
 
 
 // Интерактивная карта
+(function () {
 ymaps.ready(init);
 var myMap;
 function init() {
@@ -58,3 +59,4 @@ function init() {
 
     myMap.geoObjects.add(myPlacemark);
 }
+})();
