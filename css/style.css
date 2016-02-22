@@ -753,13 +753,15 @@ img{
 
 .banner{
     width: 48.8469%;
-    padding: 23px 20px 60px;
+    padding: 23px 20px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 15px;
     min-height: 230px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .banners{
     margin-bottom: 40px;
@@ -774,8 +776,8 @@ img{
     float: right;
     background-image: url(../img/chocolate-bgr.jpg);
     background-color: #734425;
-
 }
+
 .banner__text{
     font-size: 18px;
     margin-bottom: 23px;
@@ -783,9 +785,7 @@ img{
 }
 
 .banner__btn{
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
+text-align: right;
 }
 
 .banner__btn a{
