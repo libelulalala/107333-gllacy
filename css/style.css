@@ -18,7 +18,6 @@
 
 /*Общее*/
 
-
 body {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
@@ -33,6 +32,7 @@ img{
     max-width: 100%;
     height: auto;
 }
+
 .clearfix:after {
     content: "";
     display: table;
@@ -212,7 +212,7 @@ img{
 }
 
 .main-navigation__item:active{
-    box-shadow: 0px -1px 2px 0px #686868;
+    box-shadow: inset 0 2px 1px 0 #696969;
 }
 
 .main-navigation__item:active .main-navigation__link,
@@ -796,7 +796,7 @@ img{
     background-color: #efe3c7;
     background-image: url(../img/wafer-bgr.jpg);
     color: #323232;
-    padding: 20px 10px 10px 20px;
+    padding: 20px 12px 10px 20px;
     font-size: 0;
     border-radius: 15px;
     margin-top: 30px;
@@ -804,31 +804,27 @@ img{
 
 .about__title{
     font-size: 24px;
-    line-height: 30px;
-    margin-top: 0px;
-    margin-bottom: 20px;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+
 }
 
-.about__title{
-    font-size: 24px;
-    line-height: 30px;
-    margin-top: 0px;
-}
 .about__paragraph{
     display: inline-block;
     position: relative;
     vertical-align: top;
     text-align: left;
+
     font-size: 16px;
     line-height: 22px;
-    margin-top: 5px;
     font-weight: 400;
-    width: 42.3654%;
-    margin-left: 57px;
-}
 
-.about__paragraph:nth-child(2n+3){
-    margin-left: 68px;
+    width: 48.84696%;
+    padding: 14px 0 10px 55px;
+    margin: 0;
+
 }
 
 .about__paragraph::before{
@@ -837,8 +833,8 @@ img{
     background-repeat: no-repeat;
     display: block;
     position: absolute;
-    left: -60px;
-    top: -15px;
+    left: 0;
+    top: 0;
 }
 .about__paragraph--ice-cream::before{
     width: 49px;
@@ -889,18 +885,23 @@ img{
 
 .blog__new-post{
     max-width: 300px;
+    line-height: 24px;
 }
+
 .blog__new-post a{
     text-decoration: none;
     border-bottom: 2px solid  #353535;
     font-size: 24px;
-    line-height: 31px;
+    line-height: 30px;
     color: #353535;
     font-weight: 700;
-    background-color: rgba(255, 255, 255, 0.8);
-
 }
 
+.blog__new-post span {
+  padding: 4px 0 7px;
+  background-color: rgba(255, 255, 255, 0.8);
+
+}
 
 .blog__new-post a:hover,
 .blog__new-post a:active{
